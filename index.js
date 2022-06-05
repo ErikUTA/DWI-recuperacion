@@ -1,7 +1,6 @@
-// findIndex - The "FindIndex" function returns the index of the element that meets the given condition.
-// use case: Obtain the name of the customer with name "Erik".
+// replace - The replace function works to replace with a specified value the first element that matches the added data with a specified value.
+// use case: Modify an employee's name.
 
-const names = ["Juan", "Fernanda", "Erik", "Eduardo"];
-const index = names.findIndex(i => i === "Erik");
-console.log(index);
-console.log(names[index]);
+const names = "Juan, Fernanda, Erik, Eduardo";
+const result = names.replace('Erik', 'Torres');
+console.log(result);
