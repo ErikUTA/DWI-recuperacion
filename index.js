@@ -1,6 +1,9 @@
-// replace - The replace function works to replace with a specified value the first element that matches the added data with a specified value.
-// use case: Modify an employee's name.
+// Hoisting - Thanks to hoisting we can use function variables before declaring them in the code.
+// use case: Calculate the sum of the sides of a triangle.
 
-const names = "Juan, Fernanda, Erik, Eduardo";
-const result = names.replace('Erik', 'Torres');
-console.log(result);
+const sides = [10, 10];
+function calculateSides(side) {
+    console.log("sum of the sides: " + (sides[0] + sides[1] + side));
+}
+
+calculateSides(10);
