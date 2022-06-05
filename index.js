@@ -1,6 +1,9 @@
-// filter - The find function returns the first element that meets the condition.
-// use case: show first number greater than 18.
+// reduce - The function "reduce" allows us to add the values of an array and then return them.
+// use case: show last week's sales total.
 
-const numbers = [10, 18, 19, 20];
-const found = numbers.find(element => element > 18);
-console.log(found);
+const sales = [1000, 5000, 8000, 2000];
+const initialValue = 0;
+const sumAllSales = sales.reduce(
+    (prev, current) => prev + current, initialValue
+);
+console.log(sumAllSales);
