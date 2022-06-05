@@ -1,9 +1,14 @@
-// Hoisting - Thanks to hoisting we can use function variables before declaring them in the code.
-// use case: Calculate the sum of the sides of a triangle.
+// Promises - Promises allow us to identify when a function was not executed correctly, they are error handlers.
+// use case: Verify that the information is obtained correctly.
 
-const sides = [10, 10];
-function calculateSides(side) {
-    console.log("sum of the sides: " + (sides[0] + sides[1] + side));
-}
+var myPromise = new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve('La informacion se ha obtenido correctamete');
+    }, 3000);
+});
 
-calculateSides(10);
+myPromise.then(function(value) {
+    console.log(value);
+});
+
+console.log(myPromise);
