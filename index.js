@@ -1,6 +1,6 @@
-// filter - The filter function allows us to create a new array with the elements that meet the given condition.
-// use case: show people over 18 years old.
+// filter - The find function returns the first element that meets the condition.
+// use case: show first number greater than 18.
 
-const persons = [20, 17, 19, 15];
-const accepted = persons.filter(element => element > 18);
-console.log(accepted);
+const numbers = [10, 18, 19, 20];
+const found = numbers.find(element => element > 18);
+console.log(found);
